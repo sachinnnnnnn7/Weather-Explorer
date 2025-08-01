@@ -1,9 +1,8 @@
 // API Configuration
-<<<<<<< HEAD
-import API_KEY from "./config.js";
-=======
-const API_KEY = ""; //use your api key
->>>>>>> 2299b65ccf149af152c093c6ba2cf9ebfa040a14
+
+import api_key from "./config.js";
+
+const API_KEY = api_key; //use your api key
 const BASE_URL = "https://api.openweathermap.org/data/2.5/weather";
 
 // DOM Elements
@@ -181,7 +180,7 @@ weatherForm.addEventListener("submit", (e) => {
     return;
   }
 
-  if (API_KEY === "YOUR_API_KEY_HERE") {
+  if (API_KEY === "api_key") {
     showError(
       "Please add your OpenWeatherMap API key to use this application."
     );
@@ -208,7 +207,7 @@ function initApp() {
   createParticles();
 
   // Demo data for showcase (remove when using real API)
-  if (API_KEY === "YOUR_API_KEY_HERE") {
+  if (API_KEY === "api_key") {
     setTimeout(() => {
       displayDemoData();
     }, 1000);
