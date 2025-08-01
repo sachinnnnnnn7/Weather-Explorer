@@ -1,5 +1,5 @@
 // API Configuration
-const API_KEY = "65451214f2b16fd53fbb2dcc741e9f3f"; // Replace with your OpenWeatherMap API key
+import API_KEY from "./config.js";
 const BASE_URL = "https://api.openweathermap.org/data/2.5/weather";
 
 // DOM Elements
